@@ -1,0 +1,175 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="https://media.base44.com/images/public/69f5077872bdbd351ef583ea/86a5020ed_IMG_3581.jpeg" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <title>
+   Wiki Race
+  </title>
+  <script crossorigin="" src="js/index-Ce6evxlP.js" type="module">
+  </script>
+  <link crossorigin="" href="css/index-BCJIn5kQ.css" rel="stylesheet"/>
+  <script type="module">
+   if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "69f5077872bdbd351ef583ea";
+    if (!appId) return;
+    fetch(`/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+  </script>
+  <meta content="An engaging, competitive trivia platform designed to test and expand your knowledge through fast-paced, real-time challenges." name="description"/>
+  <meta content="Wiki Race" property="og:title"/>
+  <meta content="An engaging, competitive trivia platform designed to test and expand your knowledge through fast-paced, real-time challenges." property="og:description"/>
+  <meta content="https://media.base44.com/images/public/69f5077872bdbd351ef583ea/86a5020ed_IMG_3581.jpeg/v1/fill/w_1200,h_630/86a5020ed_IMG_3581.jpeg" property="og:image"/>
+  <meta content="https://wiki-race.base44.app" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Wiki Race" property="og:site_name"/>
+  <meta content="Wiki Race" name="twitter:title"/>
+  <meta content="An engaging, competitive trivia platform designed to test and expand your knowledge through fast-paced, real-time challenges." name="twitter:description"/>
+  <meta content="https://media.base44.com/images/public/69f5077872bdbd351ef583ea/86a5020ed_IMG_3581.jpeg/v1/fill/w_1200,h_630/86a5020ed_IMG_3581.jpeg" name="twitter:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="https://wiki-race.base44.app" name="twitter:url"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="Wiki Race" name="apple-mobile-web-app-title"/>
+  <link href="https://wiki-race.base44.app" rel="canonical"/>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "Wiki Race", "@context": "https://schema.org", "@type": "WebSite", "url": "https://wiki-race.base44.app"}
+  </script>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "Wiki Race", "logo": "https://media.base44.com/images/public/69f501aa43c67a9014e18d66/081525e04_logo.png", "@context": "https://schema.org", "@type": "Organization", "url": "https://wiki-race.base44.app"}
+  </script>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"name": "Home", "item": "https://wiki-race.base44.app", "position": "1", "@type": "ListItem"}]}
+  </script>
+ </head>
+ <body>
+  <div id="root">
+   <div class="min-h-screen relative bg-black text-white overflow-hidden">
+    <canvas class="fixed inset-0 w-full h-full pointer-events-none" height="888" style="z-index: 0;" width="1920">
+    </canvas>
+    <div class="fixed inset-0 pointer-events-none scanlines" style="z-index: 1;">
+    </div>
+    <div class="fixed inset-0 pointer-events-none" style="z-index: 1; background: radial-gradient(transparent 50%, rgba(0, 0, 0, 0.65) 100%);">
+    </div>
+    <button class="fixed top-3 left-3 z-50 font-pixel text-[8px] tracking-wider text-white/70 hover:text-white flex items-center gap-2 bg-black/60 border border-white/20 hover:border-white/50 px-3 py-2 transition-all duration-150">
+     <svg class="lucide lucide-user" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2">
+      </path>
+      <circle cx="12" cy="7" r="4">
+      </circle>
+     </svg>
+     <span class="text-[7px]">
+      LOGIN
+     </span>
+    </button>
+    <button class="fixed top-3 right-3 z-30 w-8 h-8 flex items-center justify-center border border-white/20 hover:border-white/60 bg-black/60 hover:bg-white/10 transition-all" title="About WikiRace">
+     <svg class="lucide lucide-info text-white/50 hover:text-white" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10">
+      </circle>
+      <path d="M12 16v-4">
+      </path>
+      <path d="M12 8h.01">
+      </path>
+     </svg>
+    </button>
+    <div class="fixed bottom-2 left-2 z-20 font-pixel text-[9px] tracking-widest text-white/50 flex items-center gap-2">
+     <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse">
+     </span>
+     LIVE
+    </div>
+    <div class="relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-6">
+     <div class="mb-8">
+      <div class="w-20 h-20 rounded-full border-2 border-white/70 flex items-center justify-center logo-ring">
+       <span class="font-pixel text-white text-2xl leading-none" style="text-shadow: rgba(255, 255, 255, 0.7) 0px 0px 10px;">
+        W
+       </span>
+      </div>
+     </div>
+     <h1 class="font-pixel text-white text-4xl sm:text-5xl md:text-6xl tracking-[0.12em] mb-3 pixel-flicker" style="text-shadow: rgba(255, 255, 255, 0.45) 0px 0px 24px;">
+      WIKIRACE
+     </h1>
+     <p class="font-pixel text-white/50 text-[9px] tracking-widest mb-4">
+      navigate · discover · compete
+     </p>
+     <div class="mb-8">
+     </div>
+     <div class="w-full max-w-sm space-y-3">
+      <button class="font-pixel text-[10px] sm:text-[11px] tracking-widest py-3 px-6 border transition-all duration-150 cursor-pointer select-none flex items-center justify-center gap-2 w-full bg-black text-white border-white/40 hover:border-white hover:bg-white/5 active:scale-[0.98]">
+       <svg class="lucide lucide-play" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="6 3 20 12 6 21 6 3">
+        </polygon>
+       </svg>
+       PLAY
+      </button>
+      <button class="font-pixel text-[10px] sm:text-[11px] tracking-widest py-3 px-6 border transition-all duration-150 cursor-pointer select-none flex items-center justify-center gap-2 w-full bg-black text-yellow-400 border-yellow-400 hover:bg-yellow-400/10 active:scale-[0.98]">
+       <svg class="lucide lucide-trophy" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6">
+        </path>
+        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18">
+        </path>
+        <path d="M4 22h16">
+        </path>
+        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22">
+        </path>
+        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22">
+        </path>
+        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z">
+        </path>
+       </svg>
+       WIKIPODIUM
+      </button>
+      <button class="font-pixel text-[10px] sm:text-[11px] tracking-widest py-3 px-6 border transition-all duration-150 cursor-pointer select-none flex items-center justify-center gap-2 w-full bg-black text-white border-white/40 hover:border-white hover:bg-white/5 active:scale-[0.98]">
+       <svg class="lucide lucide-circle-help" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10">
+        </circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
+        </path>
+        <path d="M12 17h.01">
+        </path>
+       </svg>
+       HOW TO PLAY
+      </button>
+      <button class="font-pixel text-[10px] sm:text-[11px] tracking-widest py-3 px-6 border transition-all duration-150 cursor-pointer select-none flex items-center justify-center gap-2 w-full bg-black text-white border-white/40 hover:border-white hover:bg-white/5 active:scale-[0.98]">
+       <svg class="lucide lucide-settings" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+        </path>
+        <circle cx="12" cy="12" r="3">
+        </circle>
+       </svg>
+       SETTINGS
+      </button>
+     </div>
+     <p class="mt-10 font-pixel text-white/20 text-[7px] tracking-widest">
+      v1.0.0 — BETA
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
